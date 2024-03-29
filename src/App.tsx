@@ -8,11 +8,12 @@ import PageHeader from './components/page-header/page-header';
 import { NewTransaction } from './components/new-transaction/new-transaction';
 import { GetLoanBanner } from './components/get-loan-banner/get-loan-banner';
 import styles from './app.module.scss';
+import Cards_module from './components/cards/cards.module.scss';
 
 function App() {
     return (
         <div className={styles.root}>
-            <DashboardLayout>
+            <DashboardLayout className={Cards_module.creditCard}>
                 <Section>
                     <Section.Content>
                         <PageHeader className={styles.header}>
